@@ -1,53 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Slaider</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" media="screen and (max-width: 1300px)" href="./css/mobile.css" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Yeseva+One&display=swap">
+	<title>SlaiderMOY</title>
 </head>
+
 <body>
-    <main>
-        <section class="projects">
-            <div id="projects" class="container projects-contant">
-                <nav>
-                    <ul class="projects-list">
-                        <li class="projects-item item_1"><a href="">Rostov-on-Don, Admiral</a></li>
-                        <li class="projects-item"><a href="">Sochi Thieves</a></li>
-                        <li class="projects-item"><a href="">Rostov-on-Don Patriotic</a></li>
-                    </ul>
-                </nav>
-                <div class="contant-1">
-                    <div class="projects-block">
-                        <h2 class="title block-title">Completed <br>projects</h2>
-                        <p class="block-text">Only a small part of the work performed by our company is presented<br>
-                        on the site. For 14 years on in the construction <br>
-                        market we have made happy more than 1000 families</p>
-                        <img class="hiden-img" src="./imajes/img-second.png">
-                        <div class="four-blocks">
-                            <div class="quarter-blocks-1">
-                                <h3 class="title quarter-title">City:</h3>
-                                <span class="block-quarter-text">Rostov-on-Don<br> LCD admiral</span>
-                            </div>
-                            <div class="quarter-blocks-1">
-                                <h3 class="title quarter-title">apartment area:</h3>
-                                <span class="block-quarter-text">81 m2</span>
-                            </div>
-                            <div class="quarter-blocks-1">
-                                <h3 class="title quarter-title">Repair time:</h3>
-                                <span class="block-quarter-text">3.5 months</span>
-                            </div>
-                            <div class="quarter-blocks-1">
-                                <h3 class="title quarter-title">Repair Cost:</h3>
-                                <span class="block-quarter-text">Upon request</span>
-                            </div> 
-                        </div>
-                        <img class="group-project" src="./imajes/Group-project.png"> 
-                    </div>
-            <img class="projects-img" src="images/image 2.1.jpg">
-        </div>
-    </section>
-    </main>
+	<main>
+		<section class="projects">
+			<div class="container">
+				<div class="projects-contant">
+					<ul class="projects-list">
+						<!--<li class="projects-menu__item">
+							<a href="" class="projects-menu__link">Rostov-on-Don, Admiral</a>
+						</li>
+						<li class="projects-menu__item">
+							<a href="" class="projects-menu__link">Sochi Thieves</a>
+						</li>
+						<li class="projects-menu__item">
+							<a href="" class="projects-menu__link">Rostov-on-Don Patriotic</a>
+						</li>-->
+					</ul>
+				</div>
+				<div class="projects-container">
+					<div class="projects-block">
+						<h2 class="title block-title">Completed<br> projects<img class="img_line"
+								src="./icons/Rectangle 6.2.svg"></h2>
+						<p class="block-text">Only a small part of the work performed by our company is presented<br>
+							on the site. For 14 years on in the construction <br>
+							market we have made happy more than 1000 families.
+						</p>
+						<div class="projects__mobile__image">
+							<img src="./icons/circle_arrow_right.svg" alt="Arrow icon"
+								class="mobile__arrow mobile__arrow__right" />
+							<img src="./icons/circle_arrow_left.svg" alt="Arrow icon" class="mobile__arrow" />
+							<div class="mobile__images">
+								<!-- <img src="./images/project_2.jpg" alt="Projects image"/> -->
+							</div>
+						</div>						
+						<div class="four-blocks">
+							<div class="projects__item">							
+								<h3 class="title quarter-title">City:</h3>
+								<div class="city__item"></div>
+							</div>
+							<div class="projects__item">
+								<h3 class="title quarter-title">Apartment Area:</h3>
+								<div class="area__item"></div>
+							</div>
+							<div class="projects__item">
+								<h3 class="title quarter-title">Repair time:</h3>
+								<div class="time__item"></div>
+							</div>
+							<div class="projects__item">
+								<h3 class="title quarter-title">Repair Cost:</h3>
+								<span class="projects__item__text">Upon request</span>
+							</div>
+							<div class="dots">
+								<div class="slider__arrow left__arrow">
+									<img src="./icons/arrow_left.svg" alt="left arrow" />
+								</div>
+								<div class="slider__dots"></div>
+								<div class="slider__arrow right__arrow">
+									<img src="./icons/arrow_right.svg" alt="right arrow" />
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="slider__images">
+						<!-- <img src="./images/slider_01.jpg" /> -->
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<script src="./js/index.js"></script>
 </body>
+
 </html>
